@@ -139,5 +139,11 @@ int partsort_double_pointer(int* arr, int begin,int end)
 	}
 	swap(&arr[prev], &arr[key]);
 	return key;
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
