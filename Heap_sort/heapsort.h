@@ -1,7 +1,16 @@
 #pragma once
 #include<iostream>
 #include<vector>
+#include<algorithm>
+#include <cassert>
 using namespace std;
+
+void swap(int& a,int & b)
+{
+	int temp = a;
+	a = b;
+	b = temp;
+}
 void heap_modify(vector<int>& arr, int n, int i)
 {
 	int largest = i;
@@ -24,7 +33,7 @@ void heap_modify(vector<int>& arr, int n, int i)
 void heapsort(vector<int>& arr)
 {
 	int n = arr.size();
-	for (int i = n / 2 - 1; i > 0; i++)
+	for (int i = n / 2 - 1; i > 0; i--)
 	{
 		heap_modify(arr, n, i);
 	}

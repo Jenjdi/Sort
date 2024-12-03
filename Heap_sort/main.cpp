@@ -1,6 +1,3 @@
-#include <iostream>
-#include <cassert>
-#include <vector>
 #include"heapsort.h"
 int main() {
 
